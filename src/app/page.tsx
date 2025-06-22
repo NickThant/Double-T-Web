@@ -6,7 +6,6 @@ import { FaStar } from 'react-icons/fa';
 const Home: React.FC = () => {
   return (
     <div className="text-gray-800">
-      {/* === Hero Section === */}
       <div
         className="bg-cover bg-center text-white py-16 px-4 text-center flex flex-col justify-end"
         style={{
@@ -34,13 +33,11 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* === Service Section === */}
       <section className="py-12 px-4 max-w-6xl mx-auto">
         <h2 className="text-xl md:text-2xl text-center font-bold text-[#1c84c3] mb-10">
           Cleaning Services for Residential Properties
         </h2>
 
-        {/* Service Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-10">
           <div className="flex justify-center">
             <Image
@@ -85,7 +82,6 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* === Reviews Section === */}
 <section className="bg-white py-12 px-4">
   <h2 className="text-xl md:text-2xl text-center font-bold text-[#1c84c3] mb-10">
     Reviews from our customers
@@ -97,20 +93,17 @@ const Home: React.FC = () => {
         key={i}
         className="bg-[#00bcd4] p-6 rounded-xl shadow-lg text-white flex flex-col justify-between"
       >
-        {/* Stars */}
         <div className="flex mb-4 text-yellow-400 text-lg">
           {Array(5).fill(0).map((_, star) => (
             <FaStar key={star} />
           ))}
         </div>
 
-        {/* Review Text */}
         <p className="text-sm leading-relaxed mb-4">
           There is no better feeling than walking into a super clean home, and knowing that someone else
           took time to do it. Totally worth the expense, as this gives me time for other things that are important!
         </p>
 
-        {/* Customer Name */}
         <div className="font-bold text-sm text-white">Mickens Jolly</div>
       </div>
     ))}
