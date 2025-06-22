@@ -4,24 +4,19 @@ import React from "react";
 const About: React.FC = () => {
   return (
     <div className="bg-white text-gray-800">
-  {/* Header Section */}
   <div
     className="relative h-[200px] md:h-[280px] bg-cover bg-center flex items-center justify-end px-8 md:px-16"
     style={{ backgroundImage: "url('/About.png')" }}
   >
-    {/* Overlay */}
     <div className="absolute inset-0 bg-[#03B2C5] opacity-70 z-0"></div>
 
-    {/* Title */}
     <h1 className="text-white text-2xl md:text-4xl font-bold z-10 mr-0 md:mr-16 text-right w-full">
       About Us
     </h1>
 </div>
 
 
-      {/* Content Section */}
       <div className="max-w-7xl mx-auto px-6 py-12 space-y-10">
-        {/* Top Grid: Left Image + Right Text */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center">
             <Image
@@ -53,10 +48,8 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Middle Paragraph */}
       
 
-        {/* Bottom Grid: Left Text + Right Image */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4" style={{ fontSize: 20 }}>
               <p>
@@ -66,7 +59,7 @@ const About: React.FC = () => {
         </p>
             <p>
               With a team of trained professionals, eco-friendly cleaning solutions, and a commitment to excellence,
-              we deliver tailored services that meet the unique needs of every client. Whether it’s a one-time deep
+              we deliver tailored services that meet the unique needs of every client. Whether it's a one-time deep
               clean, regular maintenance, or specialized disinfection, we approach every job with precision and care.
             </p>
             <p>
