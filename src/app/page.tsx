@@ -1,103 +1,124 @@
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaStar } from 'react-icons/fa';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="text-gray-800">
+      {/* === Hero Section === */}
+      <div
+        className="bg-cover bg-center text-white py-16 px-4 text-center flex flex-col justify-end"
+        style={{
+          backgroundImage: "url('/Home.jpg')",
+          width: "1920px",
+          height: "812px",
+          maxWidth: "100%",
+          margin: "0 auto",
+          minHeight: "400px",
+          display: "flex"
+        }}
+      >
+        <div className="mb-8">
+          <h1 className="text-2xl md:text-4xl font-bold mb-4">
+        Enjoy more free time while we handle the mess.
+          </h1>
+          <p className="text-base md:text-lg mb-6">
+        Contact us today for a free quote or to schedule your first clean!
+          </p>
+          <Link href="/contact-us">
+        <button className="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-6 rounded">
+          Contact Us
+        </button>
+          </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      {/* === Service Section === */}
+      <section className="py-12 px-4 max-w-6xl mx-auto">
+        <h2 className="text-xl md:text-2xl text-center font-bold text-[#1c84c3] mb-10">
+          Cleaning Services for Residential Properties
+        </h2>
+
+        {/* Service Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-10">
+          <div className="flex justify-center">
+            <Image
+              src="/Home 2.jpeg" 
+              alt="Modern Bathroom"
+              width={500}
+              height={300}
+              className="rounded-lg object-cover"
+            />
+          </div>
+            <div>
+            <p style={{ fontSize: "20px" }}>
+              Looking for a reliable and professional cleaning service you can trust?
+              At Double T House Cleaning Service, we specialize in delivering top-quality
+              cleaning solutions for homes and businesses. Whether you need a one-time deep
+              clean or regular maintenance, our team is here to make your space shine.
+            </p>
+            </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+            <p style={{ fontSize: "20px" }}>
+              Whether you're a busy homeowner needing a sparkling clean kitchen and bathroom,
+              or a business looking to maintain a spotless, professional environment,
+              we've got you covered. Our trained and vetted cleaning professionals use the latest
+              tools and eco-friendly products to leave your space fresh, sanitized, and welcoming.
+            </p>
+            <p className="mt-4 text-blue-500 font-semibold">
+              <Link href="/contact-us">Contact Us</Link> for more details!!!
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <Image
+              src="/Home 3.jpg" 
+              alt="Clean Kitchen"
+              width={500}
+              height={300}
+              className="rounded-lg object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* === Reviews Section === */}
+<section className="bg-white py-12 px-4">
+  <h2 className="text-xl md:text-2xl text-center font-bold text-[#1c84c3] mb-10">
+    Reviews from our customers
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    {Array(3).fill(0).map((_, i) => (
+      <div
+        key={i}
+        className="bg-[#00bcd4] p-6 rounded-xl shadow-lg text-white flex flex-col justify-between"
+      >
+        {/* Stars */}
+        <div className="flex mb-4 text-yellow-400 text-lg">
+          {Array(5).fill(0).map((_, star) => (
+            <FaStar key={star} />
+          ))}
+        </div>
+
+        {/* Review Text */}
+        <p className="text-sm leading-relaxed mb-4">
+          There is no better feeling than walking into a super clean home, and knowing that someone else
+          took time to do it. Totally worth the expense, as this gives me time for other things that are important!
+        </p>
+
+        {/* Customer Name */}
+        <div className="font-bold text-sm text-white">Mickens Jolly</div>
+      </div>
+    ))}
+  </div>
+</section>
+
     </div>
   );
-}
+};
+
+export default Home;
