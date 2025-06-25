@@ -68,11 +68,11 @@ const Services: React.FC = () => {
           <h3 className="text-[#007cc2] font-bold mb-2">What Matters Most at Double T House Cleaning Service:</h3>
           <ul className="list-disc list-inside text-sm text-gray-700 space-y-2 mb-4">
             <li>
-              <strong>Our Clients:</strong> You're our top priority. We provide affordable cleaning
+              <strong>Our Clients:</strong> You&apos;re our top priority. We provide affordable cleaning
               solutions, delivered by skilled and trusted professionals.
             </li>
             <li>
-              <strong>The Environment:</strong> We're committed to sustainability. That's why we use
+              <strong>The Environment:</strong> We&apos;re committed to sustainability. That&apos;s why we use
               environmentally responsible and safe cleaning products for every job.
             </li>
           </ul>

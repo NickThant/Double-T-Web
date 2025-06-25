@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         className="bg-cover bg-center text-white py-16 px-4 text-center flex flex-col justify-end"
         style={{
           backgroundImage: "url('/Home.jpg')",
-          width: "1920px",
+          width: "100%",
           height: "812px",
           maxWidth: "100%",
           margin: "0 auto",
@@ -32,8 +32,9 @@ const Home: React.FC = () => {
           </Link>
         </div>
       </div>
-
-      <section className="py-12 px-4 max-w-6xl mx-auto">
+      {/* Cleaning Services for Residential Properties */}
+      <div className="bg-white">
+      <section className="py-12 px-4 max-w-6xl mx-auto bg-white">
         <h2 className="text-xl md:text-2xl text-center font-bold text-[#1c84c3] mb-10">
           Cleaning Services for Residential Properties
         </h2>
@@ -61,9 +62,9 @@ const Home: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
             <p style={{ fontSize: "20px" }}>
-              Whether you're a busy homeowner needing a sparkling clean kitchen and bathroom,
+              Whether you&apos;re a busy homeowner needing a sparkling clean kitchen and bathroom,
               or a business looking to maintain a spotless, professional environment,
-              we've got you covered. Our trained and vetted cleaning professionals use the latest
+              we&apos;ve got you covered. Our trained and vetted cleaning professionals use the latest
               tools and eco-friendly products to leave your space fresh, sanitized, and welcoming.
             </p>
             <p className="mt-4 text-blue-500 font-semibold">
@@ -81,6 +82,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      </div>
 
 <section className="bg-white py-12 px-4">
   <h2 className="text-xl md:text-2xl text-center font-bold text-[#1c84c3] mb-10">
