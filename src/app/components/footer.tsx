@@ -8,24 +8,22 @@ const navLinks = [
   { label: "About Us", href: "/about" },
   { label: "Our Services", href: "/services" },
   { label: "FAQs", href: "/faqs" },
-{ label: "Contact Us", href: "/contact-us" }
+  { label: "Contact Us", href: "/contact-us" }
 ];
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#009AE4] text-white px-6 py-8">
-     
+    <footer className="bg-[#009AE4] text-white px-4 sm:px-6 py-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start text-center md:text-left">
-        
-       
-        <div>
+        {/* Call Now */}
+        <div className="mb-6 md:mb-0">
           <div className="font-bold text-lg">Call Now</div>
           <div className="text-xl font-semibold mt-1">0877823187</div>
         </div>
 
-        
+        {/* Navigation Links */}
         <div className="flex justify-center w-full">
-          <ul className="flex flex-row w-full justify-center gap-[1.5in] font-semibold whitespace-nowrap">
+          <ul className="flex flex-col md:flex-row w-full justify-center gap-4 md:gap-10 font-semibold whitespace-nowrap">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link href={link.href} className="hover:underline">
@@ -35,23 +33,22 @@ const Footer: React.FC = () => {
             ))}
           </ul>
         </div>
-       
 
-        
-        <div className="flex flex-col items-center md:items-end">
+        {/* Social Icons */}
+        <div className="flex flex-col items-center md:items-end mt-6 md:mt-0">
           <div className="font-bold mb-1">Follow Us</div>
           <div className="flex space-x-4 text-xl">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaYoutube /></a>
+            <a href="#" aria-label="Facebook"><FaFacebookF /></a>
+            <a href="#" aria-label="Instagram"><FaInstagram /></a>
+            <a href="#" aria-label="YouTube"><FaYoutube /></a>
           </div>
         </div>
       </div>
 
-      
+      {/* Logo */}
       <div className="flex justify-center my-6">
         <Image
-          src="/Double T.png"  
+          src="/Double T.png"
           alt="Double T Logo"
           width={100}
           height={100}
