@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -18,9 +18,11 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-[#009AE4] text-white shadow-md px-4 py-3 flex items-center justify-between">
       <div className="flex items-center">
-        <img
+        <Image
           src="/Double T.png"
           alt="Double T Logo"
+          width={100}
+          height={100}
           className="h-16 w-auto"
         />
         <ul className="hidden md:flex space-x-6 ml-6">

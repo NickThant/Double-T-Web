@@ -41,7 +41,7 @@ const About: React.FC = () => {
               </li>
               <li>
           Our purpose is to simplify our clients&apos; lives by taking the burden of cleaning off their shoulders.
-          Whether it's a home, office, or commercial space, we believe a clean environment contributes to well-being, productivity, and peace of mind.
+          Whether it&apos;s a home, office, or commercial space, we believe a clean environment contributes to well-being, productivity, and peace of mind.
           
               </li>
             </ul>
@@ -59,7 +59,7 @@ const About: React.FC = () => {
         </p>
             <p>
               With a team of trained professionals, eco-friendly cleaning solutions, and a commitment to excellence,
-              we deliver tailored services that meet the unique needs of every client. Whether it's a one-time deep
+              we deliver tailored services that meet the unique needs of every client. Whether it&apos;s a one-time deep
               clean, regular maintenance, or specialized disinfection, we approach every job with precision and care.
             </p>
             <p>
