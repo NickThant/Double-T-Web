@@ -31,7 +31,7 @@ const faqItems = [
   {
     question: "6. Do I need to be home during the cleaning?",
     answer:
-      "It’s up to you. You can be home or provide us access instructions. We ensure secure and respectful service.",
+      "It's up to you. You can be home or provide us access instructions. We ensure secure and respectful service.",
   },
   {
     question: "7. How long does a typical cleaning take?",

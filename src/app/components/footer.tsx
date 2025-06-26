@@ -15,13 +15,15 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#009AE4] text-white px-4 sm:px-6 py-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start text-center md:text-left">
-        {/* Call Now */}
-        <div className="mb-6 md:mb-0">
-          <div className="font-bold text-lg">Call Now</div>
-          <div className="text-xl font-semibold mt-1">0877823187</div>
+        <div className="mb-6 md:mb-0 flex flex-col items-center md:items-start">
+          <a
+            href="tel:8881234567"
+            className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow inline-block mb-1"
+          >
+            Call Now - (888) 1234567
+          </a>
         </div>
 
-        {/* Navigation Links */}
         <div className="flex justify-center w-full">
           <ul className="flex flex-col md:flex-row w-full justify-center gap-4 md:gap-10 font-semibold whitespace-nowrap">
             {navLinks.map((link) => (
@@ -34,7 +36,6 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Social Icons */}
         <div className="flex flex-col items-center md:items-end mt-6 md:mt-0">
           <div className="font-bold mb-1">Follow Us</div>
           <div className="flex space-x-4 text-xl">
@@ -45,7 +46,6 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Logo */}
       <div className="flex justify-center my-6">
         <Image
           src="/Double T.png"

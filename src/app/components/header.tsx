@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -12,6 +13,7 @@ const navLinks = [
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav className="bg-[#009AE4] text-white shadow-md px-4 py-3 flex items-center justify-between">
@@ -24,14 +26,24 @@ const Navbar: React.FC = () => {
         <ul className="hidden md:flex space-x-6 ml-6">
           {navLinks.slice(0, 4).map((link) => (
             <li key={link.href}>
-              <Link href={link.href} className="hover:underline">{link.label}</Link>
+              <Link
+                href={link.href}
+                className={`hover:underline${pathname === link.href ? ' text-yellow-300 font-bold underline' : ''}`}
+              >
+                {link.label}
+              </Link>
             </li>
           ))}
         </ul>
       </div>
 
       <div className="hidden md:flex items-center space-x-6">
-        <Link href="/contact-us" className="hover:underline">Contact Us</Link>
+        <Link
+          href="/contact-us"
+          className={`hover:underline${pathname === '/contact-us' ? ' text-yellow-300 font-bold underline' : ''}`}
+        >
+          Contact Us
+        </Link>
         <a
           href="tel:8881234567"
           className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
@@ -57,7 +69,7 @@ const Navbar: React.FC = () => {
               <li key={link.href} className="w-full text-center">
                 <Link
                   href={link.href}
-                  className="block py-2 hover:underline w-full"
+                  className={`block py-2 hover:underline w-full${pathname === link.href ? ' text-yellow-300 font-bold underline' : ''}`}
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
