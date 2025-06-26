@@ -18,9 +18,9 @@ const ContactUs: React.FC = () => {
         </h2>
       </div>
 
-      <div className="bg-white text-gray-800 font-poppins">
-      <div className="max-w-4xl mx-auto px-4 pb-12">
-        <div className="bg-[#03a9f4] rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
+      <div className="bg-white text-gray-800 font-poppins mt-8">
+        <div className="max-w-4xl mx-auto px-4 pb-12">
+          <div className="bg-[#03a9f4] rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
           
         <div className="bg-[#1F5673] text-white p-6 relative h-full">
       <div className="space-y-6">
@@ -48,11 +48,16 @@ const ContactUs: React.FC = () => {
       <div className="absolute bottom-0 right-0 w-20 h-20 bg-black/80 rounded-tl-full" />
     </div>
 
-          <form className="p-8 space-y-6 bg-[#03a9f4]">
+          <form 
+            action="https://formspree.io/f/mkgbpllz" 
+            method="POST"
+            className="p-8 space-y-6 bg-[#03a9f4]"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-white text-sm mb-1">First Name</label>
                 <input
+                  name="firstName"
                   type="text"
                   className="w-full bg-transparent border-b border-white text-white placeholder-white text-sm py-1 outline-none"
                   placeholder="First Name"
@@ -61,6 +66,7 @@ const ContactUs: React.FC = () => {
               <div>
                 <label className="block text-white text-sm mb-1">Last Name</label>
                 <input
+                  name="lastName"
                   type="text"
                   className="w-full bg-transparent border-b border-white text-white placeholder-white text-sm py-1 outline-none"
                   placeholder="Last Name"
@@ -69,6 +75,7 @@ const ContactUs: React.FC = () => {
               <div>
                 <label className="block text-white text-sm mb-1">Email</label>
                 <input
+                  name="email"
                   type="email"
                   className="w-full bg-transparent border-b border-white text-white placeholder-white text-sm py-1 outline-none"
                   placeholder="you@example.com"
@@ -77,6 +84,7 @@ const ContactUs: React.FC = () => {
               <div>
                 <label className="block text-white text-sm mb-1">Phone Number</label>
                 <input
+                  name="phone"
                   type="tel"
                   className="w-full bg-transparent border-b border-white text-white placeholder-white text-sm py-1 outline-none"
                   placeholder="+1 012 3456 789"
@@ -89,6 +97,7 @@ const ContactUs: React.FC = () => {
                 What services are you looking for?
               </label>
               <select
+                name="service"
                 className="w-full bg-transparent border-b border-white text-white text-sm py-1 outline-none"
                 defaultValue=""
               >
@@ -104,6 +113,7 @@ const ContactUs: React.FC = () => {
             <div>
               <label className="block text-white text-sm mb-1">Message</label>
               <textarea
+                name="message"
                 rows={3}
                 className="w-full bg-transparent border-b border-white text-white placeholder-white text-sm py-1 outline-none resize-none"
                 placeholder="Write your message.."
