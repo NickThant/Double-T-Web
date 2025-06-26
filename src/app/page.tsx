@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       <div
         className="relative bg-cover bg-center text-white py-16 px-4 text-center flex flex-col justify-end"
         style={{
-          backgroundImage: "url('/Home.jpg')",
+          backgroundImage: "url('/Home.png')",
           width: "100%",
           height: "812px",
           maxWidth: "100%",
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
           </Link>
         </div>
       </div>
-      {/* Cleaning Services for Residential Properties */}
+     {/* Cleaning Services for Residential Properties */}
       <div className="bg-white">
       <section className="py-12 px-4 max-w-6xl mx-auto bg-white">
         <h2 className="text-xl md:text-2xl text-center font-bold text-[#1c84c3] mb-10">
