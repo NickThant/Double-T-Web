@@ -22,13 +22,13 @@ const Footer: React.FC = () => {
           >
             Call Now - 667-352-9204
           </a>
-          <br></br>
+          {/* <br></br>
           <a
             href="tel:8881234567"
             className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
           >
             Call Now - 667-298-5327
-          </a>
+          </a> */}
         </div>
 
         <div className="flex justify-center w-full">

@@ -28,19 +28,19 @@ const ContactUs: React.FC = () => {
 
         <div className="flex items-center space-x-3">
       <FiPhone />
-      <span>+1012 3456 789</span>
+      <span>+1 667-352-9204 / 667-298-5327</span>
         </div>
 
         <div className="flex items-center space-x-3">
       <FiMail />
-      <span>demo@gmail.com</span>
+      <span>doubletcleaninghouse@gmail.com</span>
         </div>
 
         <div className="flex items-start space-x-3">
       <FiMapPin />
       <span>
-        132 Dartmouth Street Boston,<br />
-        Massachusetts 02156 United States
+        4214 Goodson Court<br />
+        Belcamp Maryland 21017 USA 
       </span>
         </div>
       </div>
