@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
@@ -30,7 +30,11 @@ const Navbar: React.FC = () => {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`hover:underline${pathname === link.href ? ' text-yellow-300 font-bold underline' : ''}`}
+                className={`hover:underline${
+                  pathname === link.href
+                    ? " text-yellow-300 font-bold underline"
+                    : ""
+                }`}
               >
                 {link.label}
               </Link>
@@ -42,7 +46,11 @@ const Navbar: React.FC = () => {
       <div className="hidden md:flex items-center space-x-6">
         <Link
           href="/contact-us"
-          className={`hover:underline${pathname === '/contact-us' ? ' text-yellow-300 font-bold underline' : ''}`}
+          className={`hover:underline${
+            pathname === "/contact-us"
+              ? " text-yellow-300 font-bold underline"
+              : ""
+          }`}
         >
           Contact Us
         </Link>
@@ -50,7 +58,13 @@ const Navbar: React.FC = () => {
           href="tel:8881234567"
           className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
         >
-          Call Now - (888) 1234567
+          Call Now - 667-352-9204
+        </a>
+        <a
+          href="tel:8881234567"
+          className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
+        >
+          Call Now - 667-298-5327
         </a>
       </div>
 
@@ -59,8 +73,18 @@ const Navbar: React.FC = () => {
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
       >
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+          />
         </svg>
       </button>
 
@@ -71,7 +95,11 @@ const Navbar: React.FC = () => {
               <li key={link.href} className="w-full text-center">
                 <Link
                   href={link.href}
-                  className={`block py-2 hover:underline w-full${pathname === link.href ? ' text-yellow-300 font-bold underline' : ''}`}
+                  className={`block py-2 hover:underline w-full${
+                    pathname === link.href
+                      ? " text-yellow-300 font-bold underline"
+                      : ""
+                  }`}
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}

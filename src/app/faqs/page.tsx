@@ -53,12 +53,14 @@ const FaqSection = () => {
   };
 
   return (
-    <div className="text-gray-800">
+    <div className="text-gray-800 bg-white">
       <div
         className="relative h-[200px] md:h-[280px] bg-cover bg-center flex items-center justify-end px-8 md:px-16"
-        style={{ backgroundImage: "url('/FAQ.png')" }} 
+        style={{ backgroundImage: "url('/FAQ.png')" }}
       >
-        <h1 className="text-white text-3xl md:text-5xl font-bold z-10">Frequently Asked Questions</h1>
+        <h1 className="text-white text-3xl md:text-5xl font-bold z-10">
+          Frequently Asked Questions
+        </h1>
         <div className="absolute inset-0 bg-[#03b2c5] opacity-60 z-0" />
       </div>
 

@@ -1,14 +1,14 @@
-import React from 'react';
-import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
+import Link from "next/link";
 
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Our Services", href: "/services" },
   { label: "FAQs", href: "/faqs" },
-  { label: "Contact Us", href: "/contact-us" }
+  { label: "Contact Us", href: "/contact-us" },
 ];
 
 const Footer: React.FC = () => {
@@ -18,9 +18,16 @@ const Footer: React.FC = () => {
         <div className="mb-6 md:mb-0 flex flex-col items-center md:items-start">
           <a
             href="tel:8881234567"
-            className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow inline-block mb-1"
+            className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
           >
-            Call Now - (888) 1234567
+            Call Now - 667-352-9204
+          </a>
+          <br></br>
+          <a
+            href="tel:8881234567"
+            className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
+          >
+            Call Now - 667-298-5327
           </a>
         </div>
 
@@ -39,9 +46,12 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center md:items-end mt-6 md:mt-0">
           <div className="font-bold mb-1">Follow Us</div>
           <div className="flex space-x-4 text-xl">
-            <a href="#" aria-label="Facebook"><FaFacebookF /></a>
-            <a href="#" aria-label="Instagram"><FaInstagram /></a>
-            <a href="#" aria-label="YouTube"><FaYoutube /></a>
+            <a href="#" aria-label="Facebook">
+              <FaFacebookF />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <FaInstagram />
+            </a>
           </div>
         </div>
       </div>
