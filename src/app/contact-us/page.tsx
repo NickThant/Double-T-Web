@@ -239,7 +239,7 @@ const ContactUs: React.FC = () => {
                 <label className="block text-white text-sm mb-1 mt-4">Quantity Options <span className="text-red-500">*</span></label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex flex-col items-center">
-                    <span className="text-white text-xs mb-1">Workspaces / Desk Area</span>
+                    <span className="text-white text-xs mb-1">Workspaces/Desk Areas</span>
                     <div className="flex items-center gap-2">
                       <button type="button" className="bg-white text-[#03a9f4] rounded px-2" onClick={() => handleQuantityChange('workspaces', -1)} disabled={quantities.workspaces === 0}>-</button>
                       <input type="number" name="workspaces" value={quantities.workspaces} min={0} max={20} onChange={e => handleQuantityInput('workspaces', e.target.value)} className="w-14 text-center rounded text-black" />
@@ -255,7 +255,7 @@ const ContactUs: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex flex-col items-center">
-                    <span className="text-white text-xs mb-1">Conference Rooms / Meeting Rooms</span>
+                    <span className="text-white text-xs mb-1">Conference Rooms</span>
                     <div className="flex items-center gap-2">
                       <button type="button" className="bg-white text-[#03a9f4] rounded px-2" onClick={() => handleQuantityChange('conferenceRooms', -1)} disabled={quantities.conferenceRooms === 0}>-</button>
                       <input type="number" name="conferenceRooms" value={quantities.conferenceRooms} min={0} max={20} onChange={e => handleQuantityInput('conferenceRooms', e.target.value)} className="w-14 text-center rounded text-black" />
@@ -263,7 +263,7 @@ const ContactUs: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex flex-col items-center">
-                    <span className="text-white text-xs mb-1">Reception / Lobby Area</span>
+                    <span className="text-white text-xs mb-1">Receptions/Lobby Areas</span>
                     <div className="flex items-center gap-2">
                       <button type="button" className="bg-white text-[#03a9f4] rounded px-2" onClick={() => handleQuantityChange('reception', -1)} disabled={quantities.reception === 0}>-</button>
                       <input type="number" name="reception" value={quantities.reception} min={0} max={20} onChange={e => handleQuantityInput('reception', e.target.value)} className="w-14 text-center rounded text-black" />
