@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
@@ -51,7 +51,13 @@ const Navbar: React.FC = () => {
             href="tel:8881234567"
             className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
           >
-            Call Now - (888) 1234567
+            Call Now - 667-352-9204
+          </a>
+           <a
+            href="tel:8881234567"
+            className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
+          >
+            Call Now - 667-298-5327
           </a>
         </div>
 
