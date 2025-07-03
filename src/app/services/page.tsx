@@ -8,8 +8,8 @@ const Services: React.FC = () => {
   return (
     <div className="bg-white text-gray-800">
       <div
-        className="relative h-[200px] md:h-[280px] bg-cover bg-center flex items-center justify-end px-8 md:px-16"
-        style={{ backgroundImage: "url('/services 1.png')" }}
+        className="relative h-[200px] md:h-[280px] bg-cover bg-center flex items-center justify-end px-8 md:px-16 mt-[-16px]"
+        style={{ backgroundImage: "url('/services 1.png')" }} 
       >
         <h1 className="text-white text-2xl md:text-4xl font-bold z-10 mr-0 md:mr-16 text-right w-full">
           Cleaning Services We Offer

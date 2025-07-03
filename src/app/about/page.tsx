@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <div className="bg-white text-gray-800">
   <div
-    className="relative h-[200px] md:h-[280px] bg-cover bg-center flex items-center justify-end px-8 md:px-16"
+    className="relative h-[200px] md:h-[280px] bg-cover bg-center flex items-center justify-end px-8 md:px-16 mt-[-16px]"
     style={{ backgroundImage: "url('/About.png')" }}
   >
     <div className="absolute inset-0 bg-[#03B2C5] opacity-70 z-0"></div>
