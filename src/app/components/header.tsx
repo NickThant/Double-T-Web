@@ -47,18 +47,18 @@ const Navbar: React.FC = () => {
           >
             Contact Us
           </Link>
-          <a
-            href="tel:8881234567"
-            className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
-          >
-            Call Now - 667-352-9204
-          </a>
-           <a
-            href="tel:8881234567"
-            className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
-          >
-            Call Now - 667-298-5327
-          </a>
+            <a
+              href="tel:6673529204"
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
+            >
+              Call Now - 667-352-9204
+            </a>
+            {/* <a
+              href="tel:6672985327"
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
+            >
+              Call Now - 667-298-5327
+            </a> */}
         </div>
 
         <button

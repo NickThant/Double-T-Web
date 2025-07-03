@@ -96,7 +96,7 @@ const Home: React.FC = () => {
                 we&apos;ve got you covered. Our trained and vetted cleaning professionals use the latest
                 tools and eco-friendly products to leave your space fresh, sanitized, and welcoming.
               </p>
-              <p className="mt-4 text-blue-500 font-semibold">
+              <p className="mt-4 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow">
                 <Link href="/contact-us">Contact Us</Link> for more details!!!
               </p>
             </div>

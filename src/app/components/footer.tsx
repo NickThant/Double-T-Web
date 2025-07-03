@@ -17,18 +17,18 @@ const Footer: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start text-center md:text-left">
         <div className="mb-6 md:mb-0 flex flex-col items-center md:items-start">
           <a
-            href="tel:8881234567"
+            href="tel:6673529204"
             className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
           >
             Call Now - 667-352-9204
           </a>
-          <br></br>
+          {/* <br></br>
           <a
-            href="tel:8881234567"
+            href="tel:6672985327"
             className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
           >
             Call Now - 667-298-5327
-          </a>
+          </a> */}
         </div>
 
         <div className="flex justify-center w-full">
