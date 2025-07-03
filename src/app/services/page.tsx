@@ -99,7 +99,7 @@ const Services: React.FC = () => {
             </strong>
             <br />
             Call Double T House Cleaning Service today at{" "}
-            <strong>667-352-9204/ 667-298-5327</strong> or fill out our online
+            <strong>+1(667)352-9204 / +1(667)298-5327</strong> or fill out our online
             form to receive a free estimated price!!!
           </div>
         </div>

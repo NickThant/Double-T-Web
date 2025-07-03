@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
               href="tel:6673529204"
               className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
             >
-              Call Now - 667-352-9204
+              Call Now +1 (667) 352-9204
             </a>
             {/* <a
               href="tel:6672985327"
@@ -86,13 +86,13 @@ const Navbar: React.FC = () => {
                 </li>
               ))}
               <li className="w-full text-center">
-                <a
-                  href="tel:8881234567"
-                  className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow inline-block mt-2"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  Call Now - (888) 1234567
-                </a>
+              <a
+                href="tel:6673529204"
+                className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow inline-block mt-2"
+                onClick={() => setMenuOpen(false)}
+              >
+                Call Now +1 (667) 352-9204
+              </a>
               </li>
             </ul>
           </div>

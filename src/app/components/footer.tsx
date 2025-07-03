@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             href="tel:6673529204"
             className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
           >
-            Call Now - 667-352-9204
+            Call Now +1 (667) 352-9204
           </a>
           {/* <br></br>
           <a
