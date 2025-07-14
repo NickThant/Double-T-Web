@@ -119,7 +119,20 @@ const Home: React.FC = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {Array(3).fill(0).map((_, i) => (
+          {[
+            {
+              review: "Excellent service! They did a thorough job cleaning my apartment.",
+              name: "Sarah Martinez"
+            },
+            {
+              review: "As a busy professional, I appreciate their punctuality and attention to detail. Highly recommend!",
+              name: "David Chen"
+            },
+            {
+              review: "Great service! They did a thorough job cleaning my apartment. Very reliable and professional.",
+              name: "Aung Min"
+            }
+          ].map((review, i) => (
             <div
               key={i}
               className="bg-[#00bcd4] p-6 rounded-xl shadow-lg text-white flex flex-col justify-between"
@@ -131,11 +144,10 @@ const Home: React.FC = () => {
               </div>
 
               <p className="text-sm leading-relaxed mb-4">
-                There is no better feeling than walking into a super clean home, and knowing that someone else
-                took time to do it. Totally worth the expense, as this gives me time for other things that are important!
+                {review.review}
               </p>
 
-              <div className="font-bold text-sm text-white">Mickens Jolly</div>
+              <div className="font-bold text-sm text-white">{review.name}</div>
             </div>
           ))}
         </div>
