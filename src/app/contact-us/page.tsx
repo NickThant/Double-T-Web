@@ -100,7 +100,7 @@ const ContactUs: React.FC = () => {
     </div>
 
           <form 
-            action="https://formspree.io/f/mkgbpllz" 
+            action="https://formspree.io/f/xjkovoye" 
             method="POST"
             className="p-8 space-y-6 bg-[#03a9f4]"
           >
